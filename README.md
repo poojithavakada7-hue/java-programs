@@ -12,7 +12,7 @@ This repository contains basic Java programs created for learning and practice.
 - Multiplication Program
 - Prime Number Program
 - Switch Case Program
-
+-InsertionSort
 ## Technologies Used
 - Java
 - Git
