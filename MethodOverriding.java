@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Shape {
     void draw() {
         System.out.println("Drawing shape");
@@ -24,4 +25,32 @@ class Rectangle extends Shape {
         s1.draw();
         s2.draw();
     }
+=======
+class Shape {
+    void draw() {
+        System.out.println("Drawing shape");
+    }
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing circle");
+    }
+}
+
+class Rectangle extends Shape {
+    void draw() {
+        System.out.println("Drawing rectangle");
+    }
+}
+
+ class MethodOverriding {
+    public static void main(String[] args) {
+        Shape s1 = new Circle();
+        Shape s2 = new Rectangle();
+
+        s1.draw();
+        s2.draw();
+    }
+>>>>>>> 768406040816ae72c675bc68d18b27ad7df7b1d5
 }

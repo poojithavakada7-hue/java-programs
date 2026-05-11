@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 interface Camera { 
     void takePhoto(); 
 } 
@@ -18,4 +19,26 @@ public class Test {
         phone.takePhoto(); 
         phone.playMusic(); 
     } 
+=======
+interface Camera { 
+    void takePhoto(); 
+} 
+interface MusicPlayer { 
+    void playMusic(); 
+} 
+class SmartPhone implements Camera, MusicPlayer { 
+    public void takePhoto() { 
+        System.out.println("Taking a photo..."); 
+    } 
+    public void playMusic() { 
+        System.out.println("Playing music..."); 
+    } 
+} 
+public class Test { 
+    public static void main(String[] args) { 
+        SmartPhone phone = new SmartPhone(); 
+        phone.takePhoto(); 
+        phone.playMusic(); 
+    } 
+>>>>>>> 768406040816ae72c675bc68d18b27ad7df7b1d5
 }

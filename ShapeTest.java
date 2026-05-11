@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 interface Shape {
     void area();
 }
@@ -28,4 +29,36 @@ public class ShapeTest {
         s = new Rectangle();
         s.area();
     }
+=======
+interface Shape {
+    void area();
+}
+
+class Circle implements Shape {
+    double r = 5;
+
+    public void area() {
+        System.out.println("Circle Area = " + (3.14 * r * r));
+    }
+}
+
+class Rectangle implements Shape {
+    int l = 4, b = 6;
+
+    public void area() {
+        System.out.println("Rectangle Area = " + (l * b));
+    }
+}
+
+public class ShapeTest {
+    public static void main(String[] args) {
+        Shape s;
+
+        s = new Circle();
+        s.area();
+
+        s = new Rectangle();
+        s.area();
+    }
+>>>>>>> 768406040816ae72c675bc68d18b27ad7df7b1d5
 }
