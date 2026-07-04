@@ -1,81 +1,18 @@
-<<<<<<< HEAD
 import java.util.Scanner;
-
-class Bubblesort {
+public class Bubblesort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        // Read number of elements
-        System.out.print("Enter number of elements: ");
-        int n = sc.nextInt();
-
-        int[] arr = new int[n];
-
-        // Read array elements
-        System.out.println("Enter elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-
-        // Bubble Sort logic
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - 1 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    // swap
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+        int[] a = {5, 3, 8, 1, 2};
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = 0; j < a.length - i - 1; j++) {
+                if (a[j] > a[j + 1]) {
+                    int temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
                 }
             }
         }
-
-        // Display sorted array
-        System.out.println("Sorted array:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        sc.close();
+        for (int x : a)
+            System.out.print(x + " ");
     }
 }
-=======
-import java.util.Scanner;
-
-class Bubblesort {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        // Read number of elements
-        System.out.print("Enter number of elements: ");
-        int n = sc.nextInt();
-
-        int[] arr = new int[n];
-
-        // Read array elements
-        System.out.println("Enter elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-
-        // Bubble Sort logic
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - 1 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    // swap
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
-
-        // Display sorted array
-        System.out.println("Sorted array:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        sc.close();
-    }
-}
->>>>>>> 768406040816ae72c675bc68d18b27ad7df7b1d5
